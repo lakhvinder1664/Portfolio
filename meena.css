@@ -301,10 +301,21 @@ section {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.tech-stack img:hover {
+.tech-stack img:hover{
   filter: grayscale(0);
   transform: scale(1.1);
-}
+
+  /* Media Query for small screens */
+@media (max-width: 600px) {
+  .tech-stack .icons {
+    gap: 40px;
+  }
+
+  .tech-stack img {
+    width: 40px;
+    height: 40px;
+  }
+}}
 
 /* Projects Section */
 .projects {
