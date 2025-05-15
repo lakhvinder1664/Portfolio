@@ -117,6 +117,11 @@
     </div>
   </section>
   
+<section id="projects" class="fade-in">
+  <!-- Your project cards or content -->
+</section>
+
+
   <section id="socials" class="socials">
     <h2>Connect With Me</h2>
     <div class="social-icons">
@@ -232,5 +237,23 @@
   </footer>
 
   <script src="meena.js"></script>
+  <script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1 };   
+
+  const appearOnScroll = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+</body>
+
 </body>
 </html>
