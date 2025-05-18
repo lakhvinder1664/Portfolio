@@ -1,4 +1,22 @@
 /* ========== Responsive Design ========== */
+body::before {
+  content: "Desktop";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  background: red;
+  color: white;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  body::before { content: "Tablet"; background: blue; }
+}
+
+@media (max-width: 480px) {
+  body::before { content: "Mobile"; background: green; }
+}
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 2.5rem;

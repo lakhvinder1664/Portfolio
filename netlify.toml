@@ -1,7 +1,15 @@
 [build]
-  publish = "files container"  # Keeps your current build directory
+  publish = "files container"
+  command = "npm run build"
 
 [[headers]]
   for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"  # Adds caching headers
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'"
+    Cache-Control = "public, max-age=3600"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

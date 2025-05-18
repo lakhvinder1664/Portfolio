@@ -1,4 +1,4 @@
-headers = []
+headersOrigin = "config"
 redirects = []
 
 [functions]
@@ -32,3 +32,9 @@ publishOrigin = "config"
 [build.processing.js]
 
 [build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Cache-Control = "public, max-age=3600"

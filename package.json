@@ -1,5 +1,32 @@
 {
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server",
+    "build": "your-build-command",
+    "deploy": "netlify deploy --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakhvinder1664/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakhvinder1664/Portfolio/issues"
+  },
+  "homepage": "https://github.com/lakhvinder1664/Portfolio#readme",
   "dependencies": {
-    "netlify-cms-app": "^2.15.72"
+    "dompurify": "^3.2.5",
+    "netlify-cms-app": "^2.15.72",
+    "netlify-cms-widget-markdown": "^2.15.1"
+  },
+  "resolutions": {
+    "trim": "^1.0.1",
+    "dompurify": "^3.2.5"
   }
 }
