@@ -16,8 +16,8 @@ pinned_version = "1"
 [plugins.inputs]
 
 [build]
-publish = "C:\\Users\\hp\\.vscode\\cli\\My Portfolio"
-publishOrigin = "default"
+publish = "C:\\Users\\hp\\.vscode\\cli\\My Portfolio\\files container"
+publishOrigin = "config"
 
 [build.environment]
 

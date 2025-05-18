@@ -1,0 +1,7 @@
+[build]
+  publish = "files container"  # Keeps your current build directory
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"  # Adds caching headers
